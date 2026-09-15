@@ -50,3 +50,9 @@ group :development, :test do
 end
 
 gem "jwt", "~> 3.3"
+
+gem "rspec-rails", "~> 8.0", groups: [:development, :test]
+
+gem "sidekiq", "~> 8.1"
+
+gem "json", "= 2.21.2"

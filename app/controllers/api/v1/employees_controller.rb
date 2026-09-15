@@ -8,14 +8,16 @@ class Api::V1::EmployeesController < ApplicationController
   end
 
   def create
-    employee = Employee.new(employee_params)
+  employee = Employee.new(employee_params)
 
-    if employee.save
-      render json: employee, status: :created
-    else
-      render json: { errors: employee.errors.full_messages }, status: :unprocessable_entity
-    end
+  if employee.save
+    EmployeeWelcomeJob.perform_later(employee.id)
+
+    render json: employee, status: :created
+  else
+    render json: { errors: employee.errors.full_messages }, status: :unprocessable_entity
   end
+end
 
   def update
     employee = Employee.find(params[:id])
