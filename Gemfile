@@ -55,4 +55,4 @@ gem "rspec-rails", "~> 8.0", groups: [:development, :test]
 
 gem "sidekiq", "~> 8.1"
 
-gem "json", "= 2.21.2"
+gem "json", "3.0.2"
