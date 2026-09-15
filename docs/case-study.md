@@ -1,12 +1,14 @@
 # Case Study: Ruby on Rails 6 to Rails 8 Upgrade
 
-## Overview
+Overview
 
-This case study describes a production Ruby on Rails application modernization project.
+This case study describes a real production Ruby on Rails modernization project from my professional experience.
 
-The objective was to upgrade the application from Rails 6 to Rails 8 while maintaining existing business functionality, improving maintainability, and moving the application to a more modern Ruby and Rails stack.
+Important: The GitHub Employee Management API in this repository is a separate sample application created using Rails 8 to demonstrate my current Rails development approach. It was not the application that was upgraded from Rails 6 to Rails 8.
 
-Client and company-specific details have been omitted for confidentiality.
+The Rails 6 to Rails 8 upgrade described below was performed on a separate production application. Client and company-specific details have been omitted for confidentiality.
+
+The objective of the production project was to upgrade the application from Rails 6 to Rails 8 while maintaining existing business functionality, improving maintainability, and moving to a more modern Ruby and Rails stack.
 
 ## My Role
 
